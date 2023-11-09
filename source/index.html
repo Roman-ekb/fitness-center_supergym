@@ -95,12 +95,12 @@
         <div class="price__container container">
           <h2 class="price__title">Абонементы</h2>
           <ul class="price__list">
-            <li class="price__item">1 месяц</li>
-            <li class="price__item">6 месяцев</li>
-            <li class="price__item">12 месяцев</li>
+            <li class="price__item"><button data-month-period="1" class="price__filter price__filter--active" type="button">1 месяц</button></li>
+            <li class="price__item"><button data-month-period="6" class="price__filter" type="button">6 месяцев</button></li>
+            <li class="price__item"><button data-month-period="12" class="price__filter" type="button">12 месяцев</button></li>
           </ul>
           <ul class="price__cards">
-            <li class="price__card card">
+            <li class="price__card price__card--trainer card">
               <h3 class="card__title">С тренером</h3>
               <p class="card__description">12 занятий</p>
               <div class="card__price-wrapper">
@@ -111,9 +111,9 @@
                   </svg>
                 </p>
               </div>
-              <a href="#">Купить абонемент</a>
+              <a class="card__btn btn-buy" href="#">КУПИТЬ АБОНЕМЕНТ</a>
             </li>
-            <li class="price__card card">
+            <li class="price__card price__card--day card card--active">
               <h3 class="card__title">Дневной</h3>
               <p class="card__description">с 8:00 до 17:00</p>
               <div class="card__price-wrapper">
@@ -123,9 +123,9 @@
                     <use href="img/sprite.svg#ruble" x="0" y="0"></use>
                   </svg></p>
               </div>
-              <a href="#">Купить абонемент</a>
+              <a class="card__btn btn-buy" href="#">КУПИТЬ АБОНЕМЕНТ</a>
             </li>
-            <li class="price__card card">
+            <li class="price__card price__card--fullDay card">
               <h3 class="card__title">Полный день</h3>
               <p class="card__description">с 8:00 до 22:00</p>
               <div class="card__price-wrapper">
@@ -135,11 +135,20 @@
                     <use href="img/sprite.svg#ruble" x="0" y="0"></use>
                   </svg></p>
               </div>
-              <a href="#">Купить абонемент</a>
+              <a class="card__btn btn-buy" href="#">КУПИТЬ АБОНЕМЕНТ</a>
             </li>
           </ul>
+          <div class="price__right-bottom-img">
+            <picture>
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/plates-tablet.webp 1x, img/plates-tablet@2x.webp 2x">
+              <source media="(max-width: 1365px)" srcset="img/plates-tablet.png 1x, img/plates-tablet@2x.png 2x">
+              <source type="image/webp" srcset="img/plates-desktop.webp 1x, img/plates-desktop@2x.webp 2x">
+              <img src="img/plates-desktop.png" srcset="img/plates-desktop@2x.png 2x" width="321" height="384"
+                alt="Два красных блина для штанги.">
+            </picture>
+          </div>
         </div>
-        <img src="img/plates-desktop.jpg" alt="Два красных блина для штанги.">
       </section>
       <section class="games" data-test="games">
         <div class="games__container container">
