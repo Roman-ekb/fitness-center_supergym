@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {playVideo} from './modules/form-validate/play-video';
+import {playVideo} from './modules/play-video';
+import {initPriceFilter} from './modules/price-toggle';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     playVideo();
+    initPriceFilter();
   });
 });
 
