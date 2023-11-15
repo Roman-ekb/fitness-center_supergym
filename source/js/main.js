@@ -1,8 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {playVideo} from './modules/play-video';
-import {initPriceFilter} from './modules/price-toggle';
-
+import {initPriceFilter} from './modules/price/price-toggle';
+import {initActiveCard} from './modules/price/card-toggle';
+import {sliderJury, initJuryCard} from './modules/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     playVideo();
     initPriceFilter();
+    initActiveCard();
+    initJuryCard();
   });
 });
 

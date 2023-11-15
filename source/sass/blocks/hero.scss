@@ -178,17 +178,17 @@
     z-index: 1;
   }
 
-  &:hover {
+  &:hover:not(.focus-visible):not(:disabled) {
     color: $color-text-secondary;
     background-color: $color-background-main;
   }
 
-  &:focus-visible {
+  &:focus-visible:not(:disabled) {
     color: $color-text-secondary;
     background-color: $color-background-main;
   }
 
-  &:active {
+  &:active:not(:disabled) {
     color: $color-text-main-dark;
     background-color: $color-background-main;
   }

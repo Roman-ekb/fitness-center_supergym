@@ -9,6 +9,7 @@
   }
 
   @include vp-767 {
+    min-width: 320px;
     padding-top: 73px;
     padding-bottom: 70px;
   }
@@ -137,7 +138,7 @@
     }
   }
 
-  &:hover:not(:disabled) {
+  &:hover:not(.focus-visible):not(:disabled) {
     color: $color-text-main-dark;
 
     &::after {

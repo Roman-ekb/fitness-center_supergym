@@ -1,0 +1,56 @@
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-button {
+  width: 56px;
+  height: 56px;
+  --swiper-navigation-size: 30px;
+  color: $color-btn-main-outline-dark;
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  &:hover:not(:focus-visible):not(.slider-button--disabled):not(:active) {
+    border-color: $color-btn-main-outline-dark;
+  }
+
+  &:focus-visible:not(.slider-button--disabled):not(:active) {
+    border-color: $color-btn-main-outline-dark;
+  }
+
+  &:active:not(.slider-button--disabled) {
+    background-color: $color-btn-main-outline-dark;
+    color: $color-btn-main-outline-light;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    transform:  translate(-88px, -13px);
+    @include vp-1365 {
+      transform:  translate(-30px, -13px);
+    }
+
+    @include vp-767 {
+      transform: translate(-31px,-18px);
+    }
+  }
+
+  &--next {
+    transform:  translate(88px, -13px);
+
+    @include vp-1365 {
+      transform:  translate(30px, -13px);
+    }
+
+    @include vp-767 {
+      transform: translate(31px,-18px);
+    }
+  }
+
+  @include vp-767 {
+    --swiper-navigation-size: 19px;
+  }
+}

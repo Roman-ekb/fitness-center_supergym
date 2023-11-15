@@ -38,7 +38,7 @@
     line-height: 22px;
   }
 
-  &:hover {
+  &:hover:not(.focus-visible) {
     color: $color-btn-secondary-outline-dark;
   }
 
@@ -57,7 +57,7 @@
 }
 
 .header__link--logo {
-  &:hover {
+  &:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 

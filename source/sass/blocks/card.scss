@@ -5,16 +5,24 @@
   border: 7px solid transparent;
   text-align: center;
 
+  @include vp-1365 {
+    min-width: 440px;
+  }
+
   @include vp-767 {
     min-width: 290px;
     padding: 45px 35px 43px;
   }
 
-  &:hover {
+  &:hover:not(.focus-visible) {
     border-image: linear-gradient(to bottom right, #d10a42, #00359f) 1;
   }
 
   &:focus-within {
+    border-image: linear-gradient(to bottom right, #d10a42, #00359f) 1;
+  }
+
+  &--active {
     border-image: linear-gradient(to bottom right, #d10a42, #00359f) 1;
   }
 }
@@ -39,7 +47,7 @@
   opacity: 0.3;
 }
 
-.card:hover .card__btn:not(.card__btn--disabled) {
+.card:hover:not(.focus-visible) .card__btn:not(.card__btn--disabled) {
   border: none;
   background: $color-btn-fill-gradient;
   color: $color-text-main-light;
@@ -49,10 +57,20 @@
     padding: 23px 44px 21px;
   }
 
-  @include vp-767 {}
-
   &:active:not(.card__btn--disabled) {
     color: rgba($color-text-main-light, 0.7);
+  }
+}
+
+.card--active .card__btn {
+  border: none;
+  background: $color-btn-fill-gradient;
+  color: $color-text-main-light;
+  padding: 27px 44px;
+  outline: none;
+
+  @include vp-1365 {
+    padding: 23px 44px 21px;
   }
 }
 

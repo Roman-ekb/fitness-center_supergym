@@ -147,8 +147,7 @@
                 srcset="img/plates-tablet.webp 1x, img/plates-tablet@2x.webp 2x">
               <source media="(max-width: 1365px)" srcset="img/plates-tablet.png 1x, img/plates-tablet@2x.png 2x">
               <source type="image/webp" srcset="img/plates-desktop.webp 1x, img/plates-desktop@2x.webp 2x">
-              <img src="img/plates-desktop.png" srcset="img/plates-desktop@2x.png 2x" width="321" height="384"
-                alt="Два красных блина для штанги.">
+              <img src="img/plates-desktop.png" srcset="img/plates-desktop@2x.png 2x" width="321" height="384" alt="">
             </picture>
           </div>
         </div>
@@ -171,82 +170,218 @@
                   <span class="promotion__time-time">12:00</span>
                 </div>
               </div>
-              <p class="promotion__description">Ежегодные соревнования по CrossFit</p>
-              <a class="promotion__link" href="#">заполнить заявку</a>
+              <p class="promotion__description">Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="promotion__link" href="#">ЗАПОЛНИТЬ ЗАЯВКУ</a>
             </div>
             <div class="promotion__image">
-              <img src="img/promotion-game-desktop.jpg" alt="Участник соревнований в планке.">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/promotion-game-mobile.webp 1x, img/promotion-game-mobile@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/promotion-game-mobile.jpg 1x, img/promotion-game-mobile@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/promotion-game-tablet.webp 1x, img/promotion-game-tablet@2x.webp 2x">
+                <source media="(max-width: 1365px)"
+                  srcset="img/promotion-game-tablet.jpg 1x, img/promotion-game-tablet@2x.jpg 2x">
+                <source type="image/webp"
+                  srcset="img/promotion-game-desktop.webp 1x, img/promotion-game-desktop@2x.webp 2x">
+                <img src="img/promotion-game-desktop.jpg" srcset="img/promotion-game-desktop@2x.jpg 2x" width="660"
+                  height="500" alt="Участник соревнований в планке.">
+              </picture>
             </div>
           </div>
-          <h2 class="games__jury-caption">Жюри</h2>
-          <ul class="games__jury-list">
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Анна Павлова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
+          <h2 class="games__title">Жюри</h2>
+          <div class="games__slider-wrapper slider-wrapper">
+            <div class="games__slider slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="slider__container swiper-wrapper">
+                <!-- Slides -->
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Анна Павлова<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury1-desktop.jpg 1x, img/jury1-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury1-desktop.jpg 1x, img/jury1-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <img src="jury1-desktop.jpg" srcset="img/jury1-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 2 Trainer</li>
+                    <li class="card-jury__experience">Опыт — 8 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Алексей Лавров<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury2-desktop.jpg 1x, img/jury2-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury2-desktop.jpg 1x, img/jury2-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <img src="jury2-desktop.jpg" srcset="img/jury2-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 1 Trainer</li>
+                    <li class="card-jury__experience">Победитель чемпионата России по CrossFit </li>
+                    <li class="card-jury__experience">Опыт — 7 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Александр Пашков<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury3-desktop.jpg 1x, img/jury3-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury3-desktop.jpg 1x, img/jury3-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <img src="jury3-desktop.jpg" srcset="img/jury3-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 3 Trainer</li>
+                    <li class="card-jury__experience">Победитель чемпионата России по CrossFit </li>
+                    <li class="card-jury__experience">Опыт — 6 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Мария Кетова<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury4-desktop.jpg 1x, img/jury4-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury4-desktop.jpg 1x, img/jury4-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <img src="jury4-desktop.jpg" srcset="img/jury4-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 4 Trainer</li>
+                    <li class="card-jury__experience">Опыт — 4 года</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Алексей Лавров<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury2-desktop.jpg 1x, img/jury2-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury2-desktop.jpg 1x, img/jury2-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury2-desktop.webp 1x, img/jury2-desktop@2x.webp 2x">
+                    <img src="jury2-desktop.jpg" srcset="img/jury2-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 1 Trainer</li>
+                    <li class="card-jury__experience">Победитель чемпионата России по CrossFit </li>
+                    <li class="card-jury__experience">Опыт — 7 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Анна Павлова<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury1-desktop.jpg 1x, img/jury1-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury1-desktop.jpg 1x, img/jury1-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury1-desktop.webp 1x, img/jury1-desktop@2x.webp 2x">
+                    <img src="jury1-desktop.jpg" srcset="img/jury1-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 2 Trainer</li>
+                    <li class="card-jury__experience">Опыт — 8 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Мария Кетова<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury4-desktop.jpg 1x, img/jury4-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury4-desktop.jpg 1x, img/jury4-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury4-desktop.webp 1x, img/jury4-desktop@2x.webp 2x">
+                    <img src="jury4-desktop.jpg" srcset="img/jury4-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 4 Trainer</li>
+                    <li class="card-jury__experience">Опыт — 4 года</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+                <div class="slider__card card-jury swiper-slide">
+                  <p class="card-jury__name">Александр Пашков<span class="card-jury__text">CrossFit</span></p>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="img/jury3-desktop.jpg 1x, img/jury3-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <source media="(max-width: 1365px)"
+                      srcset="img/jury3-desktop.jpg 1x, img/jury3-desktop@2x.jpg 2x">
+                    <source type="image/webp"
+                      srcset="img/jury3-desktop.webp 1x, img/jury3-desktop@2x.webp 2x">
+                    <img src="jury3-desktop.jpg" srcset="img/jury3-desktop@2x.jpg 2x" width="260"
+                      height="294" alt="">
+                  </picture>
+                  <ul class="card-jury__experience-list">
+                    <li class="card-jury__experience">Certified Level 3 Trainer</li>
+                    <li class="card-jury__experience">Победитель чемпионата России по CrossFit </li>
+                    <li class="card-jury__experience">Опыт — 6 лет</li>
+                  </ul>
+                  <button class="card-jury__btn" type="button" aria-label="Показать дополнительную информацию."></button>
+                </div>
+              </div>
 
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Алексей Лавров</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Александр Пашков</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience-list">
-                <li class="card-jury__experience">Certified Level 3 Trainer</li>
-                <li class="card-jury__experience">Победитель чемпионата России по CrossFit </li>
-                <li class="card-jury__experience">Опыт — 6 лет</li>
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Мария Кетова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Анна Павлова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Анна Павлова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Анна Павлова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-            <li class="games__juri card-jury">
-              <p class="card-jury__name">Анна Павлова</p>
-              <span class="card-jury__text">CrossFit</span>
-              <img src="" alt="">
-              <ul class="card-jury__experience">
-
-              </ul>
-            </li>
-          </ul>
+            </div>
+            <div class="games__slider-button slider-button slider-button--prev swiper-button-prev" aria-label="Предыдущий слайд."></div>
+            <div class="games__slider-button slider-button slider-button--next swiper-button-next" aria-label="Следующий слайд."></div>
+          </div>
         </div>
       </section>
       <section class="features" data-test="features">
@@ -267,6 +402,22 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__container container">
           <h2>Отзывы</h2>
+
+          <div class="reviews__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
         </div>
       </section>
     </main>
