@@ -1,5 +1,6 @@
 .slider-wrapper {
   position: relative;
+  margin: 0 auto;
 }
 
 .slider-button {
@@ -28,25 +29,30 @@
   }
 
   &--prev {
-    transform:  translate(-88px, -13px);
+    top: calc(50% - 12px);
+    left: -75px;
+
     @include vp-1365 {
-      transform:  translate(-30px, -13px);
     }
 
     @include vp-767 {
-      transform: translate(-31px,-18px);
+      top: calc(50% - 18px);
+      left: -53px;
     }
   }
 
   &--next {
-    transform:  translate(88px, -13px);
+    top: calc(50% - 12px);
+    right: -75px;
 
     @include vp-1365 {
-      transform:  translate(30px, -13px);
+
     }
 
     @include vp-767 {
-      transform: translate(31px,-18px);
+      top: calc(50% - 18px);
+      right: -53px;
+
     }
   }
 

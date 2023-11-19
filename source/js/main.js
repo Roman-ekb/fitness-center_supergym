@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {playVideo} from './modules/play-video';
 import {initPriceFilter} from './modules/price/price-toggle';
 import {initActiveCard} from './modules/price/card-toggle';
-import {sliderJury, initJuryCard} from './modules/slider';
+import {sliderJury, sliderReviews, initJuryCard} from './modules/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

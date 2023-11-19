@@ -1,0 +1,16 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-background-secondary;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
+}

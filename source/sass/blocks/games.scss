@@ -2,6 +2,18 @@
   min-width: 320px;
 }
 
+.games__slider-wrapper {
+  width: 1160px;
+
+  @include vp-1365 {
+    width: 568px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+  }
+}
+
 .games__container {
   padding-top: 120px;
   padding-bottom: 120px;

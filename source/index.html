@@ -352,9 +352,11 @@
                 </div>
               </div>
             </div>
-            <div class="games__slider-button slider-button slider-button--prev swiper-button-prev"
+            <div
+              class="games__slider-button games__slider-button--prev slider-button slider-button--prev swiper-button-prev"
               aria-label="Предыдущий слайд."></div>
-            <div class="games__slider-button slider-button slider-button--next swiper-button-next"
+            <div
+              class="games__slider-button games__slider-button--next slider-button slider-button--next swiper-button-next"
               aria-label="Следующий слайд."></div>
           </div>
         </div>
@@ -435,20 +437,41 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__container container">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__slider-wrapper">
+          <div class="reviews__slider-wrapper slider-wrapper">
             <div class="reviews__slider slider swiper">
               <div class="slider__container swiper-wrapper">
-                <div class="slider__card card-reviews swiper-slide">
+                <div class="slider__card card-review swiper-slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
                     <source media="(max-width: 767px)" srcset="img/review-mobile.png 1x, img/review-mobile@2x.png 2x">
-                    <source type="image/webp" media="(max-width: 1365px)"
-                      srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
-                    <source media="(max-width: 1365px)" srcset="img/review-tablet.png 1x, img/review-tablet@2x.png 2x">
-                    <source type="image/webp" srcset="img/review-desktop.webp 1x, img/review-desktop@2x.webp 2x">
-                    <img src="img/review-desktop.png" srcset="img/review-desktop@2x.png 2x" width="80" height="80"
-                      alt="">
+                    <source type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
+                    <img src="img/review-tablet.png" srcset="img/review-tablet@2x.png 2x" width="80" height="80" alt="">
+                  </picture>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                    персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+                <div class="slider__card card-review card-review--red swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/review-mobile.png 1x, img/review-mobile@2x.png 2x">
+                    <source type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
+                    <img src="img/review-tablet.png" srcset="img/review-tablet@2x.png 2x" width="80" height="80" alt="">
+                  </picture>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+                <div class="slider__card card-review card-review--green swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/review-mobile.png 1x, img/review-mobile@2x.png 2x">
+                    <source type="image/webp" srcset="img/review-tablet.webp 1x, img/review-tablet@2x.webp 2x">
+                    <img src="img/review-tablet.png" srcset="img/review-tablet@2x.png 2x" width="80" height="80" alt="">
                   </picture>
                   <h3>Анна Орлова</h3>
                   <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
@@ -456,16 +479,96 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="reviews__slider-button slider-button slider-button--prev swiper-button-prev"
+            <div
+              class="reviews__slider-button reviews__slider-button--prev slider-button--prev slider-button swiper-button-prev"
               aria-label="Предыдущий слайд."></div>
-            <div class="reviews__slider-button slider-button slider-button--next swiper-button-next"
-              aria-label="Следующий слайд."></div> -->
+            <div
+              class="reviews__slider-button reviews__slider-button--next slider-button--next slider-button swiper-button-next"
+              aria-label="Следующий слайд."></div>
           </div>
         </div>
       </section>
     </main>
-    <footer data-test="footer">
-      <div class="footer__container container"></div>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container container">
+        <section class="footer__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="form__group">
+            <legend class="form__title">Бесплатное занятие</legend>
+            <label class="form__label" for="name">
+              <input class="form__input form__input--name" name="name" id="name" required>
+              <span class="form__label-text">Имя</span>
+            </label>
+            <label class="form__label" for="tel">
+              <input class="form__input form__input--tel" name="tel" id="tel" required>
+              <span class="form__label-text">Телефон</span>
+            </label>
+            <button class="form__button" type="submit">ОТПРАВИТЬ</button>
+          </fieldset>
+        </section>
+        <section class="footer__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__column contacts__column--left">
+            <h3 class="contacts__subtitle">Адрес:</h3>
+            <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
+            <h3 class="contacts__subtitle">График работы:</h3>
+            <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div class="contacts__column contacts__column--right">
+            <h3 class="contacts__subtitle">Телефон:</h3>
+            <a class="contacts__link" href="tel:88005555555">8-800-555-55-55</a>
+            <h3 class="contacts__subtitle">Email:</h3>
+            <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          </div>
+        </section>
+        <section class="footer__navigation navigation">
+          <span class="navigation__text">SUPERGYM</span>
+          <nav class="navigation__links">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Абонементы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Акции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Тренеры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="navigation__social-links social-links">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg class="social-links__icon" viewBox="0 0 14 14" width="14" height="14">
+                  <use href="img/sprite.svg#vk" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social__link--ok" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg class="social-links__icon" viewBox="0 0 9 16" width="9" height="16">
+                  <use href="img/sprite.svg#ok" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social__link--reddit" href="#">
+                <span class="visually-hidden">Реддит.</span>
+                <svg class="social-links__icon" viewBox="0 0 14 14" width="14" height="14">
+                  <use href="img/sprite.svg#reddit" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </footer>
   </div>
 

@@ -1,0 +1,37 @@
+.social-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-background-main;
+
+  &--disabled,
+  :disabled {
+    opacity: 0.3;
+  }
+  &:active:not(.social-links__link--disabled) {
+    background-color: $color-icon-dark;
+    color: $color-icon-light;
+  }
+
+  &:hover:not(:focus-visible):not(.social-links__link--disabled):not(:active) {
+    background-color: $color-text-secondary;
+    color: $color-icon-light;
+  }
+
+  &:focus-visible:not(.social-links__link--disabled) {
+    background-color: $color-text-secondary;
+    color: $color-icon-light;
+  }
+}
+

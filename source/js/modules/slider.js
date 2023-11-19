@@ -1,4 +1,4 @@
-const sliderJury = new window.Swiper('.swiper', {
+const sliderJury = new window.Swiper('.games__slider', {
   // Optional parameters
   loop: true,
 
@@ -24,12 +24,12 @@ const sliderJury = new window.Swiper('.swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.games__slider-button--next',
+    prevEl: '.games__slider-button--prev',
   },
 });
 
-const slides = document.querySelector('.slider__container');
+const slides = document.querySelector('.games__slider');
 
 const initJuryCard = () => {
   if (slides) {
@@ -46,4 +46,13 @@ const initJuryCard = () => {
   }
 };
 
-export {sliderJury, initJuryCard};
+const sliderReviews = new window.Swiper('.reviews__slider', {
+  loop: false,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.reviews__slider-button--next',
+    prevEl: '.reviews__slider-button--prev',
+  },
+});
+
+export {sliderJury, sliderReviews, initJuryCard};
